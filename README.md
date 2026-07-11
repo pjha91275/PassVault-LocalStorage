@@ -1,16 +1,151 @@
-# React + Vite
+# 🔐 PassVault – Local Storage Credential Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+PassVault – Local Storage is a frontend credential management web application built using **React.js** and **Tailwind CSS**. It enables users to securely store, view, and manage website credentials directly in the browser using **Local Storage**, eliminating the need for a backend or database.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# 🚀 Features
 
-## React Compiler
+## 🌍 Frontend
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Built using React.js with a modern, responsive user interface
+- Animated action icons for copy, edit, and delete operations
+- Hover effects for improved user interaction
+- Clickable website URLs for quick navigation
+- Password visibility toggle
+- Clean table-based credential management interface
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 💾 Local Storage
+
+- Browser-based credential persistence
+- No backend server required
+- Data remains available across browser sessions
+- Automatic synchronization with Local Storage
+
+---
+
+## 🔐 Credential Management
+
+Supports complete CRUD operations:
+
+- Create new credentials
+- Read stored credentials
+- Update existing credentials
+- Delete saved credentials
+
+---
+
+## ✨ User Experience
+
+- Copy username or password with a single click
+- Responsive design for desktop and mobile devices
+- Fast client-side operations without network requests
+- Simple and intuitive interface
+
+---
+
+# 🛠️ Tech Stack
+
+### Frontend
+
+- React.js
+- Tailwind CSS
+- JavaScript
+- HTML5
+- CSS3
+
+### Storage
+
+- Browser Local Storage
+
+---
+
+# 📂 Project Structure
+
+```text
+PassVault-LocalStorage/
+├── src/
+├── public/
+├── package.json
+└── README.md
+```
+
+---
+
+# ▶️ Getting Started
+
+## Prerequisites
+
+- Node.js
+- npm
+
+---
+
+## Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/pjha91275/PassVault-LocalStorage.git
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run the development server
+
+```bash
+npm run dev
+```
+
+Open your browser and navigate to
+
+```
+http://localhost:5173
+```
+
+(or the URL displayed by Vite.)
+
+---
+
+# 🎯 Learning Outcomes
+
+- Built a responsive React.js application.
+- Practiced state management using React Hooks.
+- Implemented CRUD functionality.
+- Learned browser Local Storage APIs.
+- Improved frontend component design and user interaction.
+
+---
+
+# 🚀 Future Enhancements
+
+- MongoDB database integration
+- User authentication
+- Password encryption
+- Cloud synchronization
+- Search and filtering
+- Category management
+
+---
+
+# 👨‍💻 Author
+
+**Prince Jha**
+
+Computer Engineering Student
+
+Thakur College of Engineering and Technology (TCET)
+
+---
+
+# ✅ Project Status
+
+- ✔ Completed
+- ✔ Tested
+- ✔ Frontend-only implementation

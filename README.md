@@ -37,6 +37,15 @@ Supports complete CRUD operations:
 
 ---
 
+## 🛡️ Security
+
+- Controlled credential management through client-side CRUD workflows
+- Local-only data storage (credentials are persisted locally and never sent over the network)
+- Copy-to-clipboard functionality for quick access
+- Password visibility toggle for secure viewing
+
+---
+
 ## ✨ User Experience
 
 - Copy username or password with a single click
@@ -48,17 +57,16 @@ Supports complete CRUD operations:
 
 # 🛠️ Tech Stack
 
-### Frontend
+### Frontend & Styling
+- **React 19** (Frontend library)
+- **Tailwind CSS v4** (Utility-first CSS framework via `@tailwindcss/vite`)
+- **Vite** (Build tool and development server)
+- **Lordicon** (Animated interactive icons)
+- **React-Toastify** (Toast notifications for copy, save, and delete feedback)
+- **UUID** (Unique ID generation for credentials)
 
-- React.js
-- Tailwind CSS
-- JavaScript
-- HTML5
-- CSS3
-
-### Storage
-
-- Browser Local Storage
+### Storage & Persistence
+- **Browser Local Storage** (Client-side persistent storage)
 
 ---
 
@@ -66,10 +74,26 @@ Supports complete CRUD operations:
 
 ```text
 PassVault-LocalStorage/
-├── src/
 ├── public/
-├── package.json
-└── README.md
+│   ├── icons/            # Interactive icons (eye, eyecross, github, heart)
+│   ├── favicon.png       # Site favicon image
+│   └── vite.svg          # Vite logo
+├── src/
+│   ├── assets/           # React logo asset
+│   ├── components/       # React components
+│   │   ├── Footer.jsx    # Page footer
+│   │   ├── Manager.jsx   # Core credential manager component
+│   │   └── Navbar.jsx    # Page navigation bar
+│   ├── App.css           # App styling
+│   ├── App.jsx           # Main application shell
+│   ├── index.css         # CSS Entrypoint (imports Tailwind CSS)
+│   └── main.jsx          # React mount entrypoint
+├── eslint.config.js      # ESLint linting configuration
+├── index.html            # Main HTML wrapper (loads Lordicon scripts)
+├── package.json          # Project scripts, dependencies, and configuration
+├── tailwind.config.js    # Tailwind configuration file
+├── vite.config.js        # Vite configuration with React and Tailwind plugins
+└── README.md             # Project documentation
 ```
 
 ---
@@ -78,38 +102,39 @@ PassVault-LocalStorage/
 
 ## Prerequisites
 
-- Node.js
-- npm
+- **Node.js** (v18+ recommended)
+- **npm** (comes packaged with Node.js)
 
 ---
 
-## Installation
+## Installation & Setup
 
-Clone the repository
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/pjha91275/IronVault.git PassVault-LocalStorage
+   ```
 
-```bash
-git clone https://github.com/pjha91275/PassVault-LocalStorage.git
-```
+2. **Navigate into the project directory**
+   ```bash
+   cd PassVault-LocalStorage
+   ```
 
-Install dependencies
+3. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-```bash
-npm install
-```
+4. **Run the development server**
+   ```bash
+   npm run dev
+   ```
 
-Run the development server
-
-```bash
-npm run dev
-```
-
-Open your browser and navigate to
-
-```
-http://localhost:5173
-```
-
-(or the URL displayed by Vite.)
+5. **Access the application**
+   Open your browser and navigate to:
+   ```
+   http://localhost:5173
+   ```
+   *(or the local URL displayed in your terminal by Vite)*
 
 ---
 
